@@ -1,0 +1,136 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2b0f1c, #4a1c2f);
+    color: #f5d6df;
+    line-height: 1.6;
+}
+
+/* Wrapper Card Effect */
+#wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #3a1424; /* deep plum */
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Navigation */
+header {
+    background: #6a1e3b; /* wine red */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav li {
+    color: #ffe3ec;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+    color: #ff9bb3; /* soft rose */
+}
+
+/* Main Section */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff6f91; /* vibrant rose accent */
+    position: relative;
+}
+
+/* Heart after title */
+h1::after {
+    content: " ❤";
+}
+
+/* Image Styling */
+main img {
+    width: 250px;
+    margin: 20px 0 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 105, 145, 0.4);
+}
+
+/* Sections */
+section {
+    background: #521b33; /* muted burgundy */
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    color: #ff9bb3;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #f8c8d8;
+}
+
+/* Footer */
+footer {
+    background: #6a1e3b;
+    color: #ffe3ec;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Floating Valentine's Text */
+body::before {
+    content: "HAPPY VALENTINES DAY";
+    color: #ff6f91;
+    position: fixed;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 8em;
+    animation: floatHearts 10s ease-in-out infinite;
+    opacity: 0.08; /* much more subtle */
+    z-index: 0;
+    font-family: 'Playfair Display', serif;
+    pointer-events: none;
+}
+
+@keyframes floatHearts {
+    0% {
+        transform: translateY(110vh) rotate(10deg);
+    }
+    100% {
+        transform: translateY(-110vh) rotate(-5deg);
+    }
+}
