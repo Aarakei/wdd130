@@ -1,18 +1,17 @@
-@font-face {
-    font-family: font_name;
-    src: url(../fonts/font_name.ttf);
+:root {
+    --black: #000000;
+    --deep_blue: #13293D;
+    --accent_blue: #18435A;
+    --silver: #C6C7C4;
+    --platinum: #EEF0F2;
+    /* And fonts are:
+    Titles: Noto Serif
+    Sub-Headings/Button Titles: Iosevka Charon
+    Paragraphs: Instrument Sans */
 }
 
 body {
     background: url("../images/favicon.ico")
-}
-
-#wrapper {
-    background: green;
-    border: 3px solid #a68800;
-    width: 1024px;
-    margin: 40px auto;
-    box-shadow: 10px 10px #936700
 }
 
 header {
@@ -20,13 +19,3 @@ header {
     font-size: 3em;
     text-align:center
 }
-
-section {
-    width: 360px;
-    height: 360px;
-    border: 12px, solid, #0418A0;
-    padding: 8px;
-    text-align: center;
-    display: inline-block;
-}
-
