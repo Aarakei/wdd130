@@ -213,11 +213,17 @@ footer img {
     margin-bottom: 40px;
     box-sizing: border-box;
     display: grid;
+    background-color: var(--black);
+    border-left: 8px solid var(--accent_blue);
+    border-radius: 10px;
+    padding: 0 20px;
 }
 
 .report_block h2 {
     margin: 40px 0;
     font-family: "Iosevka Charon", serif;
+    border-bottom: 2px solid var(--accent_blue);
+    padding-bottom: 20px;
 }
 
 .report_block a {
@@ -232,10 +238,11 @@ footer img {
     color:var(--platinum);
     text-decoration: none;
     font-family: 'Iosevka Charon', sans-serif;
+    border-radius: 10px;
 }
 
 .report_block a:hover {
-    background-color: var(--black);
+    background-color: var(--deep_blue);
     color:var(--silver);
 }
 
