@@ -204,3 +204,44 @@ footer img {
 .ice_block img:hover {
     transform:scale(1.1);
 }
+
+#report_wrapper {
+    grid-column: 1/3;
+}
+
+.report_block {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    display: grid;
+}
+
+.report_block h2 {
+    margin: 40px 0;
+    font-family: "Iosevka Charon", serif;
+}
+
+.report_block a {
+    width: auto;
+    height: 50px;
+    background-color: var(--accent_blue);
+    text-decoration: none;
+    font-family: "Instrument Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--platinum);
+    text-decoration: none;
+    font-family: 'Iosevka Charon', sans-serif;
+}
+
+.report_block a:hover {
+    background-color: var(--black);
+    color:var(--silver);
+}
+
+.report_block p {
+    margin: 40px;
+    max-width: 500px;
+    line-height: 1.5em;
+    font-family: "Instrument Sans", sans-serif;
+}
